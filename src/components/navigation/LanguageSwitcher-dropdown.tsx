@@ -8,6 +8,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 
+/**
+ * Kept'd to implement in the future but for the time it is currently not in use
+ * @deprecated
+ * @returns 
+ */
 export const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
 
