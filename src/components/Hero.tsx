@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import {useTranslations} from 'next-intl';
 import { ArrowDown } from 'lucide-react';
-import { HeroTestimonial } from './hero/HeroTestimonial';
 import { SocialLinks } from './hero/SocialLinks';
 import { HeroImage } from './hero/HeroImage';
 import { RotatingText } from './hero/RotatingText';
@@ -48,8 +47,6 @@ export const Hero = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
             {t('description')}
           </p>
-
-          {/* <HeroTestimonial /> */}
 
           <button
             onClick={() =>
