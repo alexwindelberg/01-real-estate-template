@@ -2,7 +2,24 @@
 import { createClient } from "@supabase/supabase-js";
 import { Database } from "./types";
 
+if (!process.env.NEXT_PUBLIC_SUPABASE_DATABASE_URL) {
+  throw new Error(
+    "NEXT_PUBLIC_SUPABASE_DATABASE_URL environment variable is not set",
+  );
+}
+
+if (!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+  throw new Error(
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY environment variable is not set",
+  );
+}
+
 export const supabase = createClient<Database>(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_DATABASE_URL,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  {
+    auth: {
+      persistSession: true,
+    },
+  },
 );
