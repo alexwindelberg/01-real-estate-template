@@ -1,10 +1,11 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { SocialLinks } from "./hero/SocialLinks";
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 import { agentConfig } from "@/config/agent";
 
 export const Footer = () => {
-  const { t } = useTranslation();
+  const t = useTranslations('Footer');
+  const n = useTranslations('Navigation');
 
   return (
     <footer className="bg-secondary py-16">
@@ -13,20 +14,20 @@ export const Footer = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">{agentConfig.name}</h3>
             <p className="text-muted-foreground">
-              {t("footer.description")}
+              {t("description")}
             </p>
             <SocialLinks />
           </div>
 
           <div>
-            <h4 className="font-semibold mb-6">{t("footer.quickLinks")}</h4>
+            <h4 className="font-semibold mb-6">{t("quickLinks")}</h4>
             <ul className="space-y-4">
               <li>
                 <a
                   href="#home"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {t("nav.home")}
+                  {n("home")}
                 </a>
               </li>
               <li>
@@ -34,7 +35,7 @@ export const Footer = () => {
                   href="#properties"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {t("nav.properties")}
+                  {n("properties")}
                 </a>
               </li>
               <li>
@@ -42,7 +43,7 @@ export const Footer = () => {
                   href="#about"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {t("nav.about")}
+                  {n("about")}
                 </a>
               </li>
               <li>
@@ -50,14 +51,14 @@ export const Footer = () => {
                   href="#contact"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  {t("nav.contact")}
+                  {n("contact")}
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-6">{t("footer.contactInfo")}</h4>
+            <h4 className="font-semibold mb-6">{t("contactInfo")}</h4>
             <ul className="space-y-4">
               <li className="flex items-center text-muted-foreground">
                 <Phone className="w-5 h-5 mr-3" />
@@ -75,17 +76,17 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-6">{t("footer.officeHours")}</h4>
+            <h4 className="font-semibold mb-6">{t("officeHours")}</h4>
             <ul className="space-y-4 text-muted-foreground">
-              <li>{t("footer.weekdays")}</li>
-              <li>{t("footer.saturday")}</li>
-              <li>{t("footer.sunday")}</li>
+              <li>{t("weekdays")}</li>
+              <li>{t("saturday")}</li>
+              <li>{t("sunday")}</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} {agentConfig.name}. {t("footer.rights")}</p>
+          <p>&copy; {new Date().getFullYear()} {agentConfig.name}. {t("rights")}</p>
         </div>
       </div>
     </footer>

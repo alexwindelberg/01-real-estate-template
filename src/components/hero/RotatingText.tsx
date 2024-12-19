@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl'
 
 export const RotatingText = () => {
-  const { t } = useTranslation();
+  const t = useTranslations('HeroSection');
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const services = [
-    t('hero.service.buying'),
-    t('hero.service.selling'),
-    t('hero.service.viewings'),
-    t('hero.service.management'),
-    t('hero.service.consultations'),
+    t('service.buying'),
+    t('service.selling'),
+    t('service.viewings'),
+    t('service.management'),
+    t('service.consultations'),
   ];
 
   // Map services to their text sizes based on length

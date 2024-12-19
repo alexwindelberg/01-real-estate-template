@@ -1,6 +1,6 @@
 import { Building2, BedDouble, Bath, Square } from "lucide-react";
 import { CarouselItem } from "@/components/ui/carousel";
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 
 interface PropertyCardProps {
   property: {
@@ -16,7 +16,7 @@ interface PropertyCardProps {
 }
 
 export const PropertyCard = ({ property }: PropertyCardProps) => {
-  const { t } = useTranslation();
+  const t = useTranslations('PropertiesSection');
 
   return (
     <CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
@@ -39,15 +39,15 @@ export const PropertyCard = ({ property }: PropertyCardProps) => {
           <div className="flex items-center justify-between text-muted-foreground">
             <div className="flex items-center">
               <BedDouble className="w-4 h-4 mr-2" />
-              <span>{property.beds} {t('properties.beds')}</span>
+              <span>{property.beds} {t('beds')}</span>
             </div>
             <div className="flex items-center">
               <Bath className="w-4 h-4 mr-2" />
-              <span>{property.baths} {t('properties.baths')}</span>
+              <span>{property.baths} {t('baths')}</span>
             </div>
             <div className="flex items-center">
               <Square className="w-4 h-4 mr-2" />
-              <span>{property.sqft} {t('properties.sqft')}</span>
+              <span>{property.sqft} {t('sqft')}</span>
             </div>
           </div>
         </div>

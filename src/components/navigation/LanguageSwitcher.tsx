@@ -1,17 +1,19 @@
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 import { Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+  //const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'es' : 'en';
-    i18n.changeLanguage(newLang);
+    // const newLang = i18n.language === 'en' ? 'es' : 'en';
+    // i18n.changeLanguage(newLang);
+    console.log('Needs to be done');
   };
 
   const getOppositeLanguageLabel = () => {
-    return i18n.language === 'en' ? 'Español' : 'English';
+    //return i18n.language === 'en' ? 'Español' : 'English';
+    return 'placeholder';
   };
 
   return (

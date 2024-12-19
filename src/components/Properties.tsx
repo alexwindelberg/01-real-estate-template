@@ -1,12 +1,12 @@
 import { useRef, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 import { PropertyCarousel } from "./properties/PropertyCarousel";
 
 const getProperties = (t: (key: string) => string) => [
   {
     id: 1,
-    title: t("properties.property1.title"),
-    type: t("properties.property1.type"),
+    title: t("property1.title"),
+    type: t("property1.type"),
     price: "$450,000",
     beds: 2,
     baths: 2,
@@ -15,8 +15,8 @@ const getProperties = (t: (key: string) => string) => [
   },
   {
     id: 2,
-    title: t("properties.property2.title"),
-    type: t("properties.property2.type"),
+    title: t("property2.title"),
+    type: t("property2.type"),
     price: "$1,200,000",
     beds: 4,
     baths: 3,
@@ -25,8 +25,8 @@ const getProperties = (t: (key: string) => string) => [
   },
   {
     id: 3,
-    title: t("properties.property3.title"),
-    type: t("properties.property3.type"),
+    title: t("property3.title"),
+    type: t("property3.type"),
     price: "$650,000",
     beds: 3,
     baths: 2,
@@ -37,7 +37,7 @@ const getProperties = (t: (key: string) => string) => [
 
 export const Properties = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const { t } = useTranslation();
+  const t = useTranslations('PropertiesSection');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,13 +69,13 @@ export const Properties = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">
-            {t('properties.subtitle')}
+            {t('subtitle')}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t('properties.title')}
+            {t('title')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            {t('properties.description')}
+            {t('description')}
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Quote } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import {useTranslations} from 'next-intl';
 import {
   Carousel,
   CarouselContent,
@@ -27,7 +27,7 @@ interface TestimonialCarouselProps {
 export const TestimonialCarousel = ({
   testimonials,
 }: TestimonialCarouselProps) => {
-  const { t } = useTranslation();
+  const t = useTranslations('AboutSection');
   const [autoplayPlugin] = useState(() =>
     Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
   );
@@ -83,7 +83,7 @@ export const TestimonialCarousel = ({
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {t('about.testimonials.readMore')}
+                      {t('testimonials.readMore')}
                     </a>
                   </Button>
                 )}

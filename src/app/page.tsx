@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import {useTranslations} from 'next-intl';
 
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
@@ -40,8 +41,8 @@ export default function Home() {
       <main>
         <Hero />
         <Properties />
-        <About />
-        {/* <Contact /> */}
+        <About /> 
+        <Contact />
       </main>
       <Footer />
     </div>

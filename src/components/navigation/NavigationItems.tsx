@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import {useTranslations} from 'next-intl';
 
 interface NavigationItemsProps {
   activeSection: string;
@@ -7,13 +7,13 @@ interface NavigationItemsProps {
 }
 
 export const NavigationItems = ({ activeSection, onItemClick, className = "" }: NavigationItemsProps) => {
-  const { t } = useTranslation();
+  const t = useTranslations('Navigation');
 
   const navItems = [
-    { id: "home", label: t("nav.home") },
-    { id: "properties", label: t("nav.properties") },
-    { id: "about", label: t("nav.about") },
-    { id: "contact", label: t("nav.contact") },
+    { id: "home", label: t("home") },
+    { id: "properties", label: t("properties") },
+    { id: "about", label: t("about") },
+    { id: "contact", label: t("contact") },
   ];
 
   return (

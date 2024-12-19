@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
+import {useTranslations} from 'next-intl';
 import { ArrowDown } from 'lucide-react';
 import { HeroTestimonial } from './hero/HeroTestimonial';
 import { SocialLinks } from './hero/SocialLinks';
@@ -8,7 +8,7 @@ import { RotatingText } from './hero/RotatingText';
 
 export const Hero = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const { t } = useTranslation();
+  const t = useTranslations('HeroSection');
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,11 +42,11 @@ export const Hero = () => {
       <div className="container py-6 mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-left flex flex-col gap-7 lg:gap-5">
           <h1 className="text-4xl md:text-6xl font-bold">
-            {t('hero.introText')} <br />
+            {t('introText')} <br />
             <RotatingText />
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-            {t('hero.description')}
+            {t('description')}
           </p>
 
           {/* <HeroTestimonial /> */}
@@ -59,7 +59,7 @@ export const Hero = () => {
             }
             className="inline-flex items-center min-w-[200px] w-auto lg:w-[30%] justify-center px-6 py-4 text-sm font-medium text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-colors"
           >
-            {t('hero.explore')}
+            {t('explore')}
           </button>
 
           <SocialLinks />

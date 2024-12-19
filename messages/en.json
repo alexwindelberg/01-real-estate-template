@@ -1,0 +1,121 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "properties": "Properties",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Language": {
+    "language": "Language",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "HeroSection": {
+      "introText": "Welcome! Let me help you with",
+      "service": {
+        "buying": "Buying",
+        "selling": "Selling",
+        "viewings": "Property Viewings",
+        "management": "Property Management",
+        "consultations": "Consultations"
+      },
+      "description": "Discover exceptional properties tailored to your lifestyle. Let us guide you to your perfect home.",
+      "explore": "Explore Properties",
+      "testimonial": "Sarah helped us find our dream home in record time. Her expertise and dedication made the entire process smooth and enjoyable!",
+      "testimonialAuthor": "Michael & Lisa Thompson"
+  },
+  "AboutSection": {
+    "title": "About Me",
+    "subtitle": "Your Trusted Real Estate Partner",
+    "description1": "With over a decade of experience in the real estate industry, I've made it my mission to help families find their perfect homes. My journey began when I helped my own parents navigate the challenging process of downsizing, and I witnessed firsthand how important it is to have a knowledgeable and caring guide.",
+    "description2": "What drives me is the joy of connecting people with properties that truly feel like home. I believe that real estate is more than just transactions – it's about understanding your dreams and future plans.",
+    "description3": "My approach combines local market expertise with personalized attention to ensure that each client receives the dedicated service they deserve.",
+    "connect": "Connect With Me",
+    "testimonials_title": "What My Clients Say",
+    "agentImageAlt": "Real Estate Agent",
+    "testimonials": {
+      "role1": "Homeowner",
+      "content1": "Working with Estate was an absolute pleasure. They found us our dream home within our budget.",
+      "role2": "Property Investor",
+      "content2": "Their market knowledge and professional approach made the entire process smooth and successful.",
+      "role3": "First-time Buyer",
+      "content3": "I couldn't be happier with the service. They guided me through every step of my first home purchase.",
+      "readMore": "Read full review"
+    }
+  },
+  "PropertiesSection": {
+    "title": "Featured Properties",
+    "subtitle": "Our Properties",
+    "description": "Discover our handpicked selection of premium properties in the most desirable locations.",
+    "beds": "Beds",
+    "baths": "Baths",
+    "sqft": "sq ft",
+    "property1": {
+      "title": "Modern Downtown Apartment",
+      "type": "Apartment"
+    },
+    "property2": {
+      "title": "Luxury Villa with Pool",
+      "type": "Villa"
+    },
+    "property3": {
+      "title": "Cozy Suburban House",
+      "type": "House"
+    }
+  },
+  "ContactSection": {
+    "title": "Get in Touch",
+    "subtitle": "Contact Us",
+    "description": "Ready to start your real estate journey? We're here to help you every step of the way.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "type": "Appointment Type",
+      "typeSelect": "Select an option",
+      "typeViewing": "Property Viewing",
+      "typeConsultation": "Consultation",
+      "typeBuying": "Buying",
+      "typeSelling": "Selling",
+      "typeManagement": "Property Management",
+      "notes": "Additional Notes (max 65 characters)",
+      "notesPlaceholder": "Enter any additional information",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "errors": {
+        "nameRequired": "Full name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "phoneRequired": "Phone number is required",
+        "typeRequired": "Please select an appointment type",
+        "notesTooLong": "Notes cannot exceed 65 characters",
+        "notesInvalid": "Notes contain invalid characters"
+      },
+      "success": {
+        "title": "Success!",
+        "message": "Your message has been sent. We'll get back to you soon."
+      },
+      "error": {
+        "title": "Error",
+        "message": "Something went wrong. Please try again."
+      },
+      "duplicate": {
+        "title": "Already submitted",
+        "message": "We have your information and will contact you soon!"
+      }
+    }
+  },
+  "Footer": {
+    "description": "Your trusted partner in finding the perfect property. We make real estate simple and enjoyable.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "officeHours": "Office Hours",
+    "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "saturday": "Saturday: 10:00 AM - 4:00 PM",
+    "sunday": "Sunday: Closed",
+    "rights": "All rights reserved."
+  }
+}
