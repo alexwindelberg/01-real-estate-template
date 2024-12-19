@@ -1,4 +1,4 @@
-import { Building2, BedDouble, Bath, Square } from "lucide-react";
+import { BedDouble, Bath, Square } from "lucide-react";
 import { CarouselItem } from "@/components/ui/carousel";
 import {useTranslations} from 'next-intl';
 

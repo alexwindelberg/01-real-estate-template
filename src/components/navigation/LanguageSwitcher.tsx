@@ -10,7 +10,7 @@ export const LanguageSwitcher = () => {
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
 
-
+  //TODO : Update the loading text into a spinner
   const toggleLanguage = () => {
     const newLang = locale === 'en' ? 'es' : 'en';
     startTransition(() => setUserLocale(newLang));
@@ -27,8 +27,12 @@ export const LanguageSwitcher = () => {
       onClick={toggleLanguage}
       className="text-primary hover:text-primary/80"
     >
-      <Languages className="h-4 w-4 mr-2" />
-      {getOppositeLanguageLabel()}
+      {!isPending ? <>
+          <Languages className="h-4 w-4 mr-2" />
+          {getOppositeLanguageLabel()}
+        </>
+        : <div>loading</div>
+       }
     </Button>
   );
 };
