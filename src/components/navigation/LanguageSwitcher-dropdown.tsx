@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 
 /**
  * TODO: Follow the guide - https://github.com/amannn/next-intl/tree/main/examples/example-app-router-without-i18n-routing
+ * Additonal Resource - https://github.com/amannn/next-intl/discussions/532
  * Kept'd to implement in the future but for the time it is currently not in use
  * @deprecated
  * @returns 
