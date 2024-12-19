@@ -1,0 +1,121 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "properties": "Propiedades",
+    "about": "Sobre Mí",
+    "contact": "Contacto"
+  },
+  "Language": {
+    "language": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "HeroSection": {
+      "introText": "¡Bienvenido! Permíteme ayudarte con",
+      "service": {
+        "buying": "Compra",
+        "selling": "Venta",
+        "viewings": "Visitas de Propiedades",
+        "management": "Administración de Propiedades",
+        "consultations": "Consultas"
+      },
+      "description": "Descubre propiedades excepcionales adaptadas a tu estilo de vida. Te guiaremos hacia tu hogar perfecto.",
+      "explore": "Explorar Propiedades",
+      "testimonial": "Sarah nos ayudó a encontrar nuestra casa soñada en tiempo récord. Su experiencia y dedicación hicieron que todo el proceso fuera fluido y agradable.",
+      "testimonialAuthor": "Michael y Lisa Thompson"
+  },
+  "AboutSection": {
+    "title": "Sobre Mí",
+    "subtitle": "Tu Socio Inmobiliario de Confianza",
+    "description1": "Con más de una década de experiencia en el sector inmobiliario, mi misión es ayudar a las familias a encontrar sus hogares perfectos. Mi viaje comenzó cuando ayudé a mis propios padres a navegar por el desafiante proceso de mudanza, y fui testigo de primera mano de lo importante que es tener una guía conocedora y atenta.",
+    "description2": "Lo que me impulsa es la alegría de conectar a las personas con propiedades que realmente se sienten como un hogar. Creo que los bienes raíces son más que simples transacciones: se trata de entender tus sueños y planes futuros.",
+    "description3": "Mi enfoque combina el conocimiento del mercado local con atención personalizada para asegurar que cada cliente reciba el servicio dedicado que merece.",
+    "connect": "Conéctate Conmigo",
+    "testimonials_title": "Lo Que Dicen Mis Clientes",
+    "agentImageAlt": "Agente Inmobiliario",
+    "testimonials": {
+      "role1": "Propietario",
+      "content1": "Trabajar con Estate fue un placer absoluto. Encontraron nuestra casa soñada dentro de nuestro presupuesto.",
+      "role2": "Inversionista Inmobiliario",
+      "content2": "Su conocimiento del mercado y enfoque profesional hicieron que todo el proceso fuera fluido y exitoso.",
+      "role3": "Comprador Primerizo",
+      "content3": "No podría estar más feliz con el servicio. Me guiaron en cada paso de mi primera compra de casa.",
+      "readMore": "Leer reseña completa"
+    }
+  },
+  "PropertiesSection": {
+    "title": "Propiedades Destacadas",
+    "subtitle": "Nuestras Propiedades",
+    "description": "Descubre nuestra selección de propiedades premium en las ubicaciones más deseables.",
+    "beds": "Habitaciones",
+    "baths": "Baños",
+    "sqft": "m²",
+    "property1": {
+      "title": "Apartamento Moderno en el Centro",
+      "type": "Apartamento"
+    },
+    "property2": {
+      "title": "Villa de Lujo con Piscina",
+      "type": "Villa"
+    },
+    "property3": {
+      "title": "Casa Acogedora en los Suburbios",
+      "type": "Casa"
+    }
+  },
+  "ContactSection": {
+    "title": "Ponte en Contacto",
+    "subtitle": "Contáctanos",
+    "description": "¿Listo para comenzar tu viaje inmobiliario? Estamos aquí para ayudarte en cada paso del camino.",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Ingrese su nombre completo",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "Ingrese su correo electrónico",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "Ingrese su número de teléfono",
+      "type": "Tipo de Cita",
+      "typeSelect": "Seleccione una opción",
+      "typeViewing": "Visita de Propiedad",
+      "typeConsultation": "Consulta",
+      "typeBuying": "Compra",
+      "typeSelling": "Venta",
+      "typeManagement": "Administración de Propiedades",
+      "notes": "Notas Adicionales (máximo 65 caracteres)",
+      "notesPlaceholder": "Ingrese cualquier información adicional",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "errors": {
+        "nameRequired": "El nombre completo es requerido",
+        "emailRequired": "El correo electrónico es requerido",
+        "emailInvalid": "Correo electrónico inválido",
+        "phoneRequired": "El número de teléfono es requerido",
+        "typeRequired": "Por favor seleccione un tipo de cita",
+        "notesTooLong": "Las notas no pueden exceder los 65 caracteres",
+        "notesInvalid": "Las notas contienen caracteres inválidos"
+      },
+      "success": {
+        "title": "¡Éxito!",
+        "message": "Tu mensaje ha sido enviado. Nos pondremos en contacto pronto."
+      },
+      "error": {
+        "title": "Error",
+        "message": "Algo salió mal. Por favor intenta de nuevo."
+      },
+      "duplicate": {
+        "title": "Ya enviado",
+        "message": "¡Tenemos tu información y te contactaremos pronto!"
+      }
+    }
+  },
+  "Footer": {
+    "description": "Tu socio de confianza para encontrar la propiedad perfecta. Hacemos que los bienes raíces sean simples y agradables.",
+    "quickLinks": "Enlaces Rápidos",
+    "contactInfo": "Información de Contacto",
+    "officeHours": "Horario de Oficina",
+    "weekdays": "Lunes - Viernes: 9:00 AM - 6:00 PM",
+    "saturday": "Sábado: 10:00 AM - 4:00 PM",
+    "sunday": "Domingo: Cerrado",
+    "rights": "Todos los derechos reservados."
+  }
+}
