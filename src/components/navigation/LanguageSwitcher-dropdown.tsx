@@ -41,6 +41,6 @@ export const LanguageSwitcher = () => {
     //     </DropdownMenuItem>
     //   </DropdownMenuContent>
     // </DropdownMenu>
-    <div>Placeholder</div>
+    <div>adfsdfsdf</div>
   );
 };

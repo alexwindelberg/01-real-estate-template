@@ -1,19 +1,23 @@
-import {useTranslations} from 'next-intl';
+'use client';
+
+import {useLocale} from 'next-intl';
 import { Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {useTransition} from 'react';
+import {setUserLocale} from '@/services/locale';
 
 export const LanguageSwitcher = () => {
-  //const { i18n } = useTranslation();
+  const locale = useLocale();
+  const [isPending, startTransition] = useTransition();
+
 
   const toggleLanguage = () => {
-    // const newLang = i18n.language === 'en' ? 'es' : 'en';
-    // i18n.changeLanguage(newLang);
-    console.log('Needs to be done');
+    const newLang = locale === 'en' ? 'es' : 'en';
+    startTransition(() => setUserLocale(newLang));
   };
 
   const getOppositeLanguageLabel = () => {
-    //return i18n.language === 'en' ? 'Español' : 'English';
-    return 'placeholder';
+    return locale === 'en' ? 'Español' : 'English';
   };
 
   return (
